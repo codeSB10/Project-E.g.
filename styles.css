@@ -69,6 +69,8 @@ a {
 ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
@@ -371,6 +373,7 @@ footer {
     background-color: black;
     color: white;
     opacity: 0.85;
+    text-align: center;
 }
 
 .footer__logo {
@@ -405,7 +408,75 @@ footer .row {
     cursor: not-allowed;
 }
 
+/* 
+**
+
+BOOKS PAGE
+
+**
+*/
+
+#books__body {
+    background-color: rgba(115, 66, 214, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+#books__main {
+    flex: 1;
+}
+
+.books__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.books__header--title {
+    margin-bottom: 0;
+}
+
+select {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.books__loading {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 60px;
+    color: #7421e2;
+}
+
+.fa-spinner {
+    animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 /* FOR TABLETS */
+
 
 @media screen and (max-width: 770px) {
     .logo {
